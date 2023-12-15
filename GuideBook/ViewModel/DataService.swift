@@ -93,4 +93,35 @@ On the bottom floor is an exhibit room showing the history and science of animat
         
     }
     
+    func getFileData() -> [City]{
+        
+        // Get file path to DemoData.json
+        if let url = Bundle.main.url(forResource: "DemoData", withExtension: "json"){
+            
+            do {
+                // Read the file and turn it into Data
+                let data = try Data(contentsOf: url)
+                
+                // Parse data into Swift instances
+                let decoder = JSONDecoder()
+                
+                do{
+                    let cities = try decoder.decode([City].self, from: data)
+                    return cities
+                }catch{
+                    print("Couldn't parse the json: \(error)")
+                }
+            }
+            catch {
+                print("Couldn't read the file: \(error)")
+            } // eğer bir hata oluşur ve bir şekilde json dosyasını okuyamaz ise throws error bizim de bu error'u catch yapmamız gerekir. eğer hata yoksa bir sonra ki aşamaya geçer.
+            
+            
+            
+        }
+        
+        return [City]() // eğer url yani json nil ise yukarda yazılan tüm kodları es geçip direk bu kod'a gelecek. Burada da boş bir array döndüyorum yani uygulama crash olmaz, sadece ekran da bir data gözükmez.
+        
+    }
+    
 }

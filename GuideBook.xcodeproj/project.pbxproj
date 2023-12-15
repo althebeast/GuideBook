@@ -18,6 +18,7 @@
 		843767C82B2787E40069859A /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843767C72B2787E40069859A /* Attraction.swift */; };
 		843767CD2B2797120069859A /* CityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843767CC2B2797120069859A /* CityCard.swift */; };
 		843767CF2B279CCD0069859A /* AttractionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843767CE2B279CCD0069859A /* AttractionRow.swift */; };
+		84EFFFBA2B2C246700331686 /* DemoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EFFFB92B2C246700331686 /* DemoData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		843767C72B2787E40069859A /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		843767CC2B2797120069859A /* CityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCard.swift; sourceTree = "<group>"; };
 		843767CE2B279CCD0069859A /* AttractionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionRow.swift; sourceTree = "<group>"; };
+		84EFFFB92B2C246700331686 /* DemoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				843767CA2B278D4F0069859A /* View */,
 				843767C92B278D4A0069859A /* Model */,
 				843767B02B27868A0069859A /* GuideBookApp.swift */,
+				84EFFFB92B2C246700331686 /* DemoData.json */,
 				843767B42B27868C0069859A /* Assets.xcassets */,
 				843767B62B27868D0069859A /* GuideBook.entitlements */,
 				843767B72B27868D0069859A /* Preview Content */,
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				843767B92B27868D0069859A /* Preview Assets.xcassets in Resources */,
+				84EFFFBA2B2C246700331686 /* DemoData.json in Resources */,
 				843767B52B27868C0069859A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
